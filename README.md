@@ -43,15 +43,6 @@ This project follows a **microservices architecture**, leveraging the following 
 
 ---
 
-## Project Structure
-healthcare-management-system/ │ ├── patient-service/ # Handles patient-related operations │ ├── app/ │ │ ├── routers/ # API endpoints │ │ │ └── patient.py # Patient service routes │ │ ├── models/ # Database models │ │ │ └── patient.py # Patient model │ │ ├── services/ # Business logic │ │ │ └── patient_service.py # Core patient logic │ │ ├── main.py # Entry point for the microservice │ └── requirements.txt # Python dependencies │ ├── doctor-service/ # Handles doctor-related operations │ ├── (similar structure as patient-service) │ ├── appointment-service/ # Manages appointments │ ├── (similar structure as patient-service) │ ├── notification-service/ # Sends notifications │ ├── (similar structure as patient-service) │ ├── docker-compose.yml # Orchestrates all microservices ├── README.md # Documentation ├── .gitignore # Files to ignore in Git ├── env.example # Example environment variable file └── tests/ # End-to-end and unit tests ├── test_end_to_end.py # Integration tests └── unit/ # Unit test files
-
-
-
-
-
----
-
 ## Prerequisites
 1. **Python** (>= 3.9)
 2. **Docker** and **Docker Compose**
@@ -69,7 +60,7 @@ cd healthcare-management-system
 
 ---
 
-Install Dependencies
+## Install Dependencies
 
 Install Python dependencies for each microservice.
 Example for Patient Service:
@@ -79,3 +70,11 @@ cd patient-service
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+
+---
+## Running the Application
+### Using Docker Compose
+
+Run the following command to build and start all services:
+``` bash
+docker-compose up --build
