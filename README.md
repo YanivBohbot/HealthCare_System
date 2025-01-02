@@ -57,6 +57,7 @@ This project follows a **microservices architecture**, leveraging the following 
 ```bash
 git clone https://github.com/your-username/healthcare-management-system.git
 cd healthcare-management-system
+```
 
 ---
 
@@ -70,7 +71,7 @@ cd patient-service
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 ---
 ## Running the Application
 ### Using Docker Compose
@@ -78,3 +79,4 @@ pip install -r requirements.txt
 Run the following command to build and start all services:
 ``` bash
 docker-compose up --build
+```
