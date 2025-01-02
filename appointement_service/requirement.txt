@@ -1,0 +1,5 @@
+fastapi[all]
+sqlalchemy[asyncio]
+asyncpg
+aio-pika
+psycopg2-binary

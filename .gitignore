@@ -1,0 +1,38 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment-specific files
+.env
+*.env
+
+# Virtual environment directory
+venv/
+env/
+
+# Dependency files
+*.log
+*.sqlite3
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
+# Docker files
+*.pid
+
+# Pytest cache
+.pytest_cache/
+
+# Ignore RabbitMQ or other service data
+data/
